@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		6682E9D829F1BADA00432F2F /* CryptoCurrencyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6682E9D729F1BADA00432F2F /* CryptoCurrencyApp.swift */; };
 		6682E9DA29F1BADA00432F2F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6682E9D929F1BADA00432F2F /* ContentView.swift */; };
-		6682E9DC29F1BADC00432F2F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6682E9DB29F1BADC00432F2F /* Assets.xcassets */; };
+		6682E9DC29F1BADC00432F2F /* AppIcon.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6682E9DB29F1BADC00432F2F /* AppIcon.xcassets */; };
 		6682E9DF29F1BADC00432F2F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6682E9DE29F1BADC00432F2F /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
@@ -17,7 +17,7 @@
 		6682E9D429F1BADA00432F2F /* CryptoCurrency.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CryptoCurrency.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6682E9D729F1BADA00432F2F /* CryptoCurrencyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoCurrencyApp.swift; sourceTree = "<group>"; };
 		6682E9D929F1BADA00432F2F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		6682E9DB29F1BADC00432F2F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6682E9DB29F1BADC00432F2F /* AppIcon.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = AppIcon.xcassets; sourceTree = "<group>"; };
 		6682E9DE29F1BADC00432F2F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -51,9 +51,13 @@
 		6682E9D629F1BADA00432F2F /* CryptoCurrency */ = {
 			isa = PBXGroup;
 			children = (
-				6682E9D729F1BADA00432F2F /* CryptoCurrencyApp.swift */,
+				6682E9E929F1BB8800432F2F /* Utils */,
+				6682E9E829F1BB7D00432F2F /* Extensions */,
+				6682E9E729F1BB7500432F2F /* Models */,
+				6682E9E629F1BB6D00432F2F /* Core */,
+				6682E9E529F1BB5900432F2F /* App */,
 				6682E9D929F1BADA00432F2F /* ContentView.swift */,
-				6682E9DB29F1BADC00432F2F /* Assets.xcassets */,
+				6682E9DB29F1BADC00432F2F /* AppIcon.xcassets */,
 				6682E9DD29F1BADC00432F2F /* Preview Content */,
 			);
 			path = CryptoCurrency;
@@ -65,6 +69,50 @@
 				6682E9DE29F1BADC00432F2F /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		6682E9E529F1BB5900432F2F /* App */ = {
+			isa = PBXGroup;
+			children = (
+				6682E9D729F1BADA00432F2F /* CryptoCurrencyApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		6682E9E629F1BB6D00432F2F /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				6682E9EA29F1BBB800432F2F /* Home */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		6682E9E729F1BB7500432F2F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		6682E9E829F1BB7D00432F2F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		6682E9E929F1BB8800432F2F /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		6682E9EA29F1BBB800432F2F /* Home */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,6 +144,7 @@
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1420;
 				LastUpgradeCheck = 1420;
+				ORGANIZATIONNAME = slemeshaev;
 				TargetAttributes = {
 					6682E9D329F1BADA00432F2F = {
 						CreatedOnToolsVersion = 14.2;
@@ -126,7 +175,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6682E9DF29F1BADC00432F2F /* Preview Assets.xcassets in Resources */,
-				6682E9DC29F1BADC00432F2F /* Assets.xcassets in Resources */,
+				6682E9DC29F1BADC00432F2F /* AppIcon.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,7 +244,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -249,7 +298,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -263,18 +312,20 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"CryptoCurrency/Preview Content\"";
 				DEVELOPMENT_TEAM = 5GWB2H668N;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Crypto Currency";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.finance";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -292,18 +343,20 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"CryptoCurrency/Preview Content\"";
 				DEVELOPMENT_TEAM = 5GWB2H668N;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Crypto Currency";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.finance";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

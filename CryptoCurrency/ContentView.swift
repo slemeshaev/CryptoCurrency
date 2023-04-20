@@ -3,6 +3,7 @@
 //  CryptoCurrency
 //
 //  Created by Stanislav Lemeshaev on 20.04.2023.
+//  Copyright © 2023 slemeshaev. All rights reserved.
 //
 
 import SwiftUI
@@ -10,10 +11,7 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+            Text("Crypto Currency")
         }
         .padding()
     }
