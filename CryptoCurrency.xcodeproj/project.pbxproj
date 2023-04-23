@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6678D44E29F59D5800B079B5 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6678D44D29F59D5800B079B5 /* HomeView.swift */; };
 		6682E9D829F1BADA00432F2F /* CryptoCurrencyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6682E9D729F1BADA00432F2F /* CryptoCurrencyApp.swift */; };
 		6682E9DA29F1BADA00432F2F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6682E9D929F1BADA00432F2F /* ContentView.swift */; };
 		6682E9DC29F1BADC00432F2F /* AppIcon.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6682E9DB29F1BADC00432F2F /* AppIcon.xcassets */; };
@@ -14,6 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6678D44D29F59D5800B079B5 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		6682E9D429F1BADA00432F2F /* CryptoCurrency.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CryptoCurrency.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6682E9D729F1BADA00432F2F /* CryptoCurrencyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoCurrencyApp.swift; sourceTree = "<group>"; };
 		6682E9D929F1BADA00432F2F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -32,6 +34,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6678D44B29F59CD000B079B5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6678D44D29F59D5800B079B5 /* HomeView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		6678D44C29F59CDC00B079B5 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
 		6682E9CB29F1BADA00432F2F = {
 			isa = PBXGroup;
 			children = (
@@ -111,6 +128,8 @@
 		6682E9EA29F1BBB800432F2F /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				6678D44B29F59CD000B079B5 /* Views */,
+				6678D44C29F59CDC00B079B5 /* ViewModels */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -186,6 +205,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6678D44E29F59D5800B079B5 /* HomeView.swift in Sources */,
 				6682E9DA29F1BADA00432F2F /* ContentView.swift in Sources */,
 				6682E9D829F1BADA00432F2F /* CryptoCurrencyApp.swift in Sources */,
 			);
