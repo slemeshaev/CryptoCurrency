@@ -9,6 +9,7 @@
 import SwiftUI
 
 class HomeViewModel: ObservableObject {
+    @Published var coins = [Coin]()
     
     init() {
         fetchCoinData()
@@ -31,7 +32,7 @@ class HomeViewModel: ObservableObject {
             
             do {
                 let coins = try JSONDecoder().decode([Coin].self, from: data)
-                print("DEBUG: Coins \(coins)")
+                self.coins = coins
             } catch let error {
                 print("DEBUG: Failed to decode with error: \(error)")
             }

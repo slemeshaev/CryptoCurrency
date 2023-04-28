@@ -16,7 +16,7 @@ struct HomeView: View {
             ScrollView(.vertical, showsIndicators: false) {
                 TopMoversView()
                 Divider()
-                AllCoinsView()
+                AllCoinsView(viewModel: viewModel)
             }
             .navigationTitle("Life prices")
         }
