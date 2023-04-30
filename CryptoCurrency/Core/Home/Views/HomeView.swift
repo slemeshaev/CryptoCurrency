@@ -14,7 +14,7 @@ struct HomeView: View {
     var body: some View {
         NavigationView {
             ScrollView(.vertical, showsIndicators: false) {
-                TopMoversView()
+                TopMoversView(viewModel: viewModel)
                 Divider()
                 AllCoinsView(viewModel: viewModel)
             }
