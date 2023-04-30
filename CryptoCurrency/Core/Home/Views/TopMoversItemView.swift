@@ -35,6 +35,7 @@ struct TopMoversItemView: View {
                 .foregroundColor(coin.priceChangePercentage24H > 0 ? .green : .red)
         }
         .frame(width: 140, height: 140)
+        .background(Color("cc.background.item"))
         .overlay(
             RoundedRectangle(cornerRadius: 10)
                 .stroke(Color(.systemGray4), lineWidth: 2)
